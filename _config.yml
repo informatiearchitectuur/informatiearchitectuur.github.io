@@ -1,6 +1,7 @@
 title: Informatie architectuur
 markdown: redcarpet
 pygments: true
+paginate: 1
 
 url: http://informatiearchitectuur.dev/_site
 

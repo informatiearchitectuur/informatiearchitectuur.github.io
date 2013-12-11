@@ -4,14 +4,14 @@
 
 // Typography
 
-$alpha-font-family	: 'Fira Sans', sans-serif;
+$alpha-font-family	: 'Merriweather', serif;
 $alpha-font-size	: 16; // pixel-value
 $alpha-font-weight	: 400;
 $alpha-line-height	: 1.5; // em-value
 $alpha-baseline-grid: 7; // pixel-value
 $alpha-leading		: 1; // multiplier
 
-$beta-font-family	: 'Fira-Sans', sans-serif;
+$beta-font-family	: 'Fira Sans', sans-serif;
 $beta-font-weight	: 700;
 
 // Grid
@@ -40,14 +40,18 @@ $base-size			: $alpha-font-size/16*1em;
 
 // UI
 
-$radius			: 5px;
+$radius			: 0px;
 $border			: 1px;
 $depth			: 0%; // Range: 0-100%
-$contrast		: 91%; // Range: 0-100%
-$shadow			: 21%; // Range: 0-100%
+$contrast		: 90%; // Range: 0-100%
+$shadow			: 30%; // Range: 0-100%
 $highlight		: 0%; // Range: 0-100%
 
 // Colors
+
+$white-color 	: #fff;
+$grey-color 	: #777;
+$dark-color 	: #000;
 
 $alpha-text-color 	: #444;
 $beta-text-color 	: #777;

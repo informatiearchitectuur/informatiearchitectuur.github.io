@@ -148,3 +148,21 @@
 		@content;
 	}
 }
+
+// Hide text
+@mixin hide-text {
+	overflow: hidden;
+
+	&:before {
+		content: "";
+		display: block;
+		width: 0;
+		height: 100%;
+	}
+}
+
+// Reset padding and marging
+@mixin reset {
+	margin: 0;
+	padding: 0;
+}

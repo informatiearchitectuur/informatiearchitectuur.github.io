@@ -13,8 +13,8 @@
 	padding: 0;
 	margin: 0;
 	overflow: hidden;
-	font-family: $alpha-font-family;
-	font-weight: $beta-font-weight;
+	font-family: $beta-font-family;
+	font-weight: 500;
 	cursor: pointer;
 	text-decoration: none;
 	transition: all .22s ease-in-out;
@@ -37,7 +37,7 @@
 }
 
 @mixin btn-m {
-	@include em-padding-lr(.75);
+	@include em-padding-lr(2);
 	@include baseline-dimensions-form(0,2,2,0);
 }
 

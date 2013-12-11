@@ -2,9 +2,10 @@
 // Frame
 //
 
-.holder {
-	background-color: $delta-ui-color;
-	@include padding-tb(1,0);
+.row {
+	@extend %clearfix;
+	position: relative;
+	@include px-padding-lr(1);
 }
 
 //
@@ -12,168 +13,127 @@
 //
 
 .header {
-	@include box-(12,1,1);
+	@include em-padding-tb(4,3.5);
 
-	.inner {
-		@extend %clearfix;
-		border-bottom: 1px solid lighten($alpha-text-color,60);
+	background-color: $white-color;
+	position: relative;
+}
+
+.logo,
+a.logo {
+	@include reset;
+
+
+	float: left;
+	display: block;
+
+	@include px-padding-lr(9,0);
+
+	font-family: $beta-font-family;
+	font-size: 17px;
+	line-height: 21px;
+	padding-top: 5px;
+	font-style: italic;
+	color: $alpha-text-color;
+
+	width: 195px;
+	height: 50px;
+
+	background-image: url('../img/logo.png');
+	background-repeat: no-repeat;
+
+	.svg & {
+		background-image: url('../img/logo.svg');
 	}
 }
 
-.logo {
-	float: left;
-	font-family: $alpha-font-family;
-	font-style: italic;
-	font-weight: $alpha-font-weight;
-	@include text-dimensions($alpha-font-size,1,1);
+a.logo:hover,
+a.logo:focus {
+	text-decoration: none;
+	color: $alpha-ui-color;
 }
 
 .main-nav {
+	@include reset;
 
 	float: left;
 	width: 100%;
 
+	@include em-padding-tb(3, 0);
+
+	@include mq($bp3) {
+		float: right;
+		width: auto;
+
+		@include em-padding-tb(0);
+	}
+
 	ul {
+		@include reset;
 		@extend %clearfix;
-		font-family: $alpha-font-family;
 		@include list-nav;
-		@include text-dimensions($alpha-font-size,1,1);
+		@include text-dimensions(16,1,0);
+		font-family: $beta-font-family;
+		border-top: 1px dotted lighten($grey-color,30);
+
+		@include mq($bp3) {
+			@include horizontal-nav;
+			border-top: none;
+		}
+	}
+
+	li {
+		@include em-padding-tb(2,0);
+
+		@include mq($bp3) {
+			@include em-padding-tb(1);
+			@include px-margin-lr(2,1);
+		}
 	}
 
 	a {
-		color: lighten($alpha-text-color,50);
+		color: $alpha-ui-color;
 		text-decoration: none;
-		font-weight: $beta-font-weight;
+		font-weight: 500;
+		border-bottom: 1px solid lighten($alpha-ui-color,30);
+
+		&:hover {
+			color: lighten($alpha-ui-color,10);
+			border-bottom: 1px solid lighten($alpha-ui-color,40);
+		}
 	}
 
-	a:hover,
 	.selected a {
-		color: darken($alpha-ui-color,0);
+		color: $alpha-text-color;
+		border-bottom: none;
 	}
-
 }
-
-.mobile-nav .main-nav {
-	display: none;
-}
-
-.main-nav-trigger {
- 	display: block;
- 	float: right;
- 	width: 2.1em;
- 	height: 2.1em;
- 	text-indent: -9999px;
- 	@include text-dimensions($alpha-font-size,1,1);
-  	@include svg-bg("../img/icon-menu", ".png", $alpha-text-color, 50%, no-repeat);
-}
-
-.svg .trigger-active,
-.trigger-active {
-	background-color: $alpha-link-color;
-}
-
-//
-// Doormat
-//
-
-.doormat-holder {
-	@include padding-bottom(1);
-}
-
-	.doormat-col-4 {
-		@include box-(12,1,1);
-	}
 
 //
 // Footer
 //
 
-.footer-holder {
-	background-color: $alpha-text-color;
-	color: lighten($alpha-text-color,70);
-	@include padding-top(1);
-}
+.footer {
+	background-color: $alpha-ui-color;
+	color: $white-color;
+	@include em-padding-tb(4, 3.5);
 
-	.footer {
-		@include box-(12,1,1);
-	}
+	text-align: center;
 
-//
-// Media Queries
-//
-
-@media (min-width: $bp3) {
-
-	.logo {
-		float: left;
-		@include text-dimensions(14,1,0);
-	}
-
-	.header-holder {
-		@include padding-top(0);
-
-		.inner {
-			@include padding-tb(1,1);
-		}
-
-	}
-
-	.mobile-nav .main-nav,
-	.main-nav {
-		display: block !important;
-		width: auto;
-		float: right;
-
-		ul {
-			@include horizontal-nav();
-			@include text-dimensions(14,1,0);
-		}
-
-		li {
-			@include px-margin-lr(1,0);
-		}
-
-	}
-
-	.main-nav-trigger {
-		display: none;
-	}
-
-}
-
-@media (min-width: $bp4) {
-
-	.holder {
-		@include padding-tb(1,1);
-	}
-
-	.header-holder {
-		@include padding-top(0);
-
-		.inner {
-			@include padding-tb(2,1);
-		}
-
-	}
-
-		.header {
-			@include box-(12,1,1);
-		}
-
-	.doormat-holder {
-		@include padding-bottom(2);
-	}
-
-		.doormat-col-4 {
-			@include box-(4,1,1);
-		}
-
-	.footer-holder {
+	p {
 		padding-bottom: 0;
 	}
 
-		.footer {
-			@include box-(12,1,1);
-		}
+	a,
+	a:visited {
+		color: lighten($alpha-ui-color,40);
+		border-bottom: 1px solid lighten($alpha-ui-color,10);
+	}
 
+	a:hover,
+	a:focus {
+		color: $white-color;
+		border-bottom: 1px solid lighten($alpha-ui-color,30);
+		text-decoration: none;
+	}
 }

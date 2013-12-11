@@ -21,6 +21,9 @@
 	<!-- Custom modernizr build: http://modernizr.com — load other JavaScript at the end of document -->
 	<script src="{{ site.url }}/js/modernizr.custom.js"></script>
 
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,300,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="{{ site.url }}/css/screen.css">
 
@@ -42,39 +45,50 @@
 
 	{% include header.html %}
 
-	<div class="holder intro-holder">
-		<section class="row intro-row">
-			<div class="intro">
-				<div class="inner">
-					<h1>{{ page.title }}</h1>
-					<p class="tagline">{{ page.date | date_to_string }}</p>
-				</div>
-			</div>
-		</section>
-	</div>
-
-	<div class="holder main-holder">
-		<div class="row main-row">
-			<div class="grid-12">
+	<article class="main blog--detail">
+		<div class="row">
+			<header class="blog--detail__header">
+				<h1>{{ page.title }}</h1>
+				<p class="tagline">{{ page.date | date_to_string }}</p>
+			</header>
+		</div>
+		<div class="row">
+			<div class="blog--detail__body">
 				{{ content }}
 			</div>
 		</div>
-	</div>
+	</article>
 
-	<div class="holder main-holder">
-		<div class="row main-row">
-			<div class="grid-12">
-				<h3>More articles</h3>
-				{% for post in site.posts %}
-					<li>
-						<span>{{ post.date | date_to_string }}</span> &raquo;
-						<a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-						 <p>{{ post.excerpt }}</p>
-					</li>
-				{% endfor %}
-			</div>
+	<div class="page">
+		<div class="row">
+			<h3>Ja! Op 15 februari 2014 komt er een Wereld IA in ons landje.</h3>
+				<a href="{{site.url}}/register.html" class="btn">Nu inschrijven</a>
 		</div>
 	</div>
+
+<!-- 	<div class="page">
+		<div class="row">
+			<h3>Verder lezen</h3>
+			{% if page.previous.url %}
+				<a href="{{site.url}}/{{page.previous.url}}" title="Previous Post:{{page.previous.title}}" class="btn">{{page.previous.title}}</a>
+			{% else %}
+				<a href="{{site.url}}/{{page.next.url}}" title="next Post:{{page.next.title}}" class="btn">{{page.next.title}}</a>
+			{% endif %}
+		</div>
+	</div> -->
+
+<!--
+	<aside class="blog blog--list">
+		{% for post in site.posts %}
+			<article class="media media--block media--link js-link-block">
+				<header class="media__header">
+					<h2><a href="{{ site.url }}{{ post.url }}" class="js-block-link">{{ post.title }}</a></h2>
+					<p class="blog__date">{{ post.date | date_to_string }}</p>
+				</header>
+				<p class="media__body">{{ post.excerpt | truncatewords: 20 }}</p>
+			</article>
+		{% endfor %}
+	</aside> -->
 
 	{% include footer.html %}
 

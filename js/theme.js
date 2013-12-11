@@ -3,42 +3,8 @@ var jsTheme =
 	// init, something like a constructor
 	init: function()
 	{
-		jsTheme.mobileNav.init();
 		jsTheme.forms.init();
-		console.log("javascript is locked and loaded!") // for testing purposes. Check your console. Delete after you finished reading this. :-)
-	}
-
-};
-
-jsTheme.mobileNav =
-{
-	init: function()
-	{
-		jsTheme.mobileNav.enableMobileNav();
-		jsTheme.mobileNav.buildMobileNav();
-	},
-
-	// CSS is based on the class .mobile-nav
-	//
-	enableMobileNav: function()
-	{
-		$("html").addClass("mobile-nav");
-	},
-
-	// build mobile nav
-	buildMobileNav: function()
-	{
-		var navHolder = $('.header .inner');
-
-		navHolder.prepend('<span class="main-nav-trigger">menu</span>');
-
-		var trigger = $('.main-nav-trigger');
-		var nav = $('.main-nav');
-
-		trigger.on('click', function() {
-			nav.toggle();
-			$(this).toggleClass("trigger-active");
-		});
+		jsTheme.blockLinks.init();
 	}
 
 };
@@ -54,6 +20,25 @@ jsTheme.forms =
 		});
 	}
 
+};
+
+jsTheme.blockLinks =
+{
+	init: function()
+	{
+		var $block = $('.js-link-block');
+		var $blockLink = $('.js-block-link');
+		var $noLink = $('.js-block-no-link');
+
+		$block.on('click', function(e) {
+			var link = $(this).find($blockLink).attr('href');
+			window.location = link;
+		});
+
+		$noLink.on('click', function(e) {
+			e.stopPropagation();
+		});
+	}
 };
 
 $(jsTheme.init);

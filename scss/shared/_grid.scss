@@ -23,12 +23,27 @@ $fluid-grid-margin: ($grid-margin / $grid-width) * 100 ;
 	padding-right: $grid-margin/$alpha-font-size * $right * 1em;
 }
 
+@mixin em-padding-tb($top: 1, $bottom: $top) {
+	padding-top: $grid-margin/$alpha-font-size * $top * 1em;
+	padding-bottom: $grid-margin/$alpha-font-size * $bottom * 1em;
+}
+
+@mixin em-margin-tb($top: 1, $bottom: $top) {
+	margin-top: $grid-margin/$alpha-font-size * $top * 1em;
+	margin-bottom: $grid-margin/$alpha-font-size * $bottom * 1em;
+}
+
 // horizontal padding based on the context grid gutter
 // use: @include px-padding-lr(#left, #right);
 
 @mixin px-padding-lr($left: 1, $right: $left) {
 	padding-left: $grid-margin * $left * 1px;
 	padding-right: $grid-margin * $right * 1px;
+}
+
+@mixin px-padding-tb($top: 1, $bottom: $top) {
+	padding-top: $grid-margin/$alpha-font-size * $top * 1px;
+	padding-bottom: $grid-margin/$alpha-font-size * $bottom * 1px;
 }
 
 // horizontal margin based on the context grid gutter in em

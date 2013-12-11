@@ -4,53 +4,24 @@ title: Homepage
 section: home
 ---
 
-<div class="holder intro-holder">
-	<section class="row intro-row">
-		<div class="intro">
-			<div class="inner">
-				<h1>Informatie architectuur</h1>
-				<p class="tagline">Informatie Architecten in Gent, Genk &amp; tussenin</p>
-				<p><a href="#" class="btn">Inschrijven</a></p>
-			</div>
+<main class="hero">
+	<div class="row">
+		<div class="inner">
+			<h1>Informatie Architecten in <em>Gent</em>, <em>Genk</em> &amp; <em>er tussenin</em></h1>
+			<p>Ja! Ook in 2014 komt er een Wereld IA in ons landje. Dit maal gaat <a href="http://www.thesedays.com/" title="These Days">These Days</a> de locatie voorzien op 15 februari. <a href="http://www.nascom.be/" title="Nascom">Nascom</a>, <a href="http://istoireservices.be/" title="iStoire Services">iStoire Services</a> en <a href="http://wijs.be/nl" title="Wijs">Wijs</a> zetten hun schouders mee onder de organisatie.</p>
+			<p><a href="{{ site.url }}/register.html" class="btn">Nu inschrijven</a></p>
 		</div>
-	</section>
-</div>
-<div class="holder main-holder">
-	<div class="row main-row">
-		<ul class="posts grid-12">
-			{% for post in site.posts %}
-				<li>
-					<span>{{ post.date | date_to_string }}</span> &raquo;
-					<a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-					 <p>{{ post.excerpt }}</p>
-				</li>
-			{% endfor %}
-		</ul>
 	</div>
-</div>
+</main>
 
-<div class="holder doormat-holder">
-	<div class="row doormat-row">
-		<div class="doormat-col-4">
-			<div class="inner">
-				<h5>Feit 1</h5>
-				<p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. </p>
-				<a href="#">Call to action</a>
-			</div>
-		</div>
-		<div class="doormat-col-4">
-			<div class="inner">
-				<h5>Feit 2</h5>
-				<p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. </p>
-				<a href="#">Call to action</a>
-			</div>
-		</div>
-		<div class="doormat-col-4">
-			<div class="inner">
-				<h5>Feit 3</h5>
-				<p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. </p>
-				<a href="">Call to action</a>
-			</div>
-		</div>
-	</div>
-</div>
+<aside class="blog blog--list">
+	{% for post in site.posts %}
+		<article class="media media--block media--link js-link-block">
+			<header class="media__header">
+				<h2><a href="{{ site.url }}{{ post.url }}" class="js-block-link">{{ post.title }}</a></h2>
+				<p class="blog__date">{{ post.date | date_to_string }}</p>
+			</header>
+			<p class="media__body">{{ post.excerpt | truncatewords: 20 }}</p>
+		</article>
+	{% endfor %}
+</aside>

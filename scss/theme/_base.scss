@@ -9,7 +9,7 @@
 }
 
 html {
-	background-color: $alpha-text-color;
+	background-color: $alpha-ui-color;
 	-webkit-overflow-scrolling: touch;
 	-webkit-text-size-adjust: 100%;
 	    -ms-text-size-adjust: 100%;
@@ -133,14 +133,13 @@ img {
 a {
 	text-decoration: none;
 	color: $alpha-link-color;
-	transition: color .22s ease-in-out;
 
 	&:visited {
 		color: $alpha-link-colorvisited;
 	}
 
 	&:hover {
-		text-decoration: underline;
+		text-decoration: none;
 		color: $alpha-link-colorhover;
 	}
 

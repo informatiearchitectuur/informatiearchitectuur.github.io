@@ -33,16 +33,3 @@ a.btn-secondary {
 	}
 
 }
-
-@media (min-width: $bp5) {
-
-	.btn,
-	a.btn,
-	.btn-secondary,
-	input.btn-secondary,
-	input[type="submit"].btn-secondary,
-	a.btn-secondary {
-		@include btn-l;
-	}
-
-}
