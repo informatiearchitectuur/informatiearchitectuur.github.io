@@ -1,0 +1,56 @@
+---
+layout: default
+title: Homepage
+section: home
+---
+
+<div class="holder intro-holder">
+	<section class="row intro-row">
+		<div class="intro">
+			<div class="inner">
+				<h1>Informatie architectuur</h1>
+				<p class="tagline">Informatie Architecten in Gent, Genk &amp; tussenin</p>
+				<p><a href="#" class="btn">Inschrijven</a></p>
+			</div>
+		</div>
+	</section>
+</div>
+<div class="holder main-holder">
+	<div class="row main-row">
+		<ul class="posts grid-12">
+			{% for post in site.posts %}
+				<li>
+					<span>{{ post.date | date_to_string }}</span> &raquo;
+					<a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+					 <p>{{ post.excerpt }}</p>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+
+<div class="holder doormat-holder">
+	<div class="row doormat-row">
+		<div class="doormat-col-4">
+			<div class="inner">
+				<h5>Feit 1</h5>
+				<p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. </p>
+				<a href="#">Call to action</a>
+			</div>
+		</div>
+		<div class="doormat-col-4">
+			<div class="inner">
+				<h5>Feit 2</h5>
+				<p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. </p>
+				<a href="#">Call to action</a>
+			</div>
+		</div>
+		<div class="doormat-col-4">
+			<div class="inner">
+				<h5>Feit 3</h5>
+				<p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. </p>
+				<a href="">Call to action</a>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,9 @@
+title: Informatie architectuur
+markdown: redcarpet
+pygments: true
+
+url: http://informatiearchitectuur.dev/_site
+
+exclude: ['_site', 'scss','*scss','Gem*','Guard*','*rb','.sass-cache','.git*','config.rb','*.md','*.json']
+
+
