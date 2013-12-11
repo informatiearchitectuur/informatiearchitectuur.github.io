@@ -10,6 +10,10 @@
 
 	// @import "compass";
 
+// Assets
+
+	@import "theme/fonts";
+
 // Shared: do not delete any of this.
 
 	@import "shared/functions";
@@ -27,6 +31,7 @@
 	@import "patterns/alerts";
 	@import "patterns/pagination";
 	@import "patterns/helpers";
+
 
 // Theme: feel free to delete any or all.
 
