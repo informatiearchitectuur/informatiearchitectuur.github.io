@@ -49,46 +49,35 @@
 		<div class="row">
 			<header class="blog--detail__header">
 				<h1>{{ page.title }}</h1>
-				<p class="tagline">{{ page.date | date_to_string }}</p>
+				<p class="header__details">{{ page.date | date_to_string }}, <a href="{{ page.author_url }}">{{ page.post_author }}</a></p>
 			</header>
 		</div>
 		<div class="row">
 			<div class="blog--detail__body">
 				{{ content }}
+				<ul class="share-list">
+					<li>
+						<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+					</li>
+					<li>
+						<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
+					</li>
+					<li>
+						<div class="g-plusone" data-size="long"></div>
+					</li>
+				</ul>
 			</div>
+
 		</div>
+
 	</article>
 
-	<div class="page">
+	<div class="cta cta--post">
 		<div class="row">
 			<h3>Ja! Op 15 februari 2014 komt er een Wereld IA in ons landje.</h3>
-				<a href="{{site.url}}/register.html" class="btn">Nu inschrijven</a>
+				<a href="{{site.url}}/register.html" class="btn btn--pos">Nu inschrijven</a>
 		</div>
 	</div>
-
-<!-- 	<div class="page">
-		<div class="row">
-			<h3>Verder lezen</h3>
-			{% if page.previous.url %}
-				<a href="{{site.url}}/{{page.previous.url}}" title="Previous Post:{{page.previous.title}}" class="btn">{{page.previous.title}}</a>
-			{% else %}
-				<a href="{{site.url}}/{{page.next.url}}" title="next Post:{{page.next.title}}" class="btn">{{page.next.title}}</a>
-			{% endif %}
-		</div>
-	</div> -->
-
-<!--
-	<aside class="blog blog--list">
-		{% for post in site.posts %}
-			<article class="media media--block media--link js-link-block">
-				<header class="media__header">
-					<h2><a href="{{ site.url }}{{ post.url }}" class="js-block-link">{{ post.title }}</a></h2>
-					<p class="blog__date">{{ post.date | date_to_string }}</p>
-				</header>
-				<p class="media__body">{{ post.excerpt | truncatewords: 20 }}</p>
-			</article>
-		{% endfor %}
-	</aside> -->
 
 	{% include footer.html %}
 
@@ -101,5 +90,24 @@
 
 	<!-- Theme specific JavaScript. Add your other scripts here -->
 	<script src="{{ site.url }}/js/theme.js"></script>
+
+	<!-- Social stuff -->
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/nl_NL/all.js#xfbml=1";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<script type="text/javascript">
+		(function() {
+			var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+			po.src = 'https://apis.google.com/js/plusone.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		})();
+	</script>
+
 </body>
 </html>

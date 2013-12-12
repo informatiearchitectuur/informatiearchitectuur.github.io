@@ -54,27 +54,29 @@ h5,
 h6 {
 	margin: 0;
 	font-family: $beta-font-family;
-	font-weight: $alpha-font-weight;
 	text-rendering: optimizelegibility;
 }
 
 h1 {
-	@include baseline-dimensions(3,3,3);
+	@include baseline-dimensions(3,1,1,1);
+	font-weight: 500;
 }
 
 h2 {
-	@include baseline-dimensions(2,3,3);
+	@include text-dimensions(21,1,0,1,0);
+	font-weight: 700;
 }
 
 h3 {
 	@include baseline-dimensions(1,3,1);
+	font-weight: 500;
 }
 
 h4,
 h5,
 h6 {
-	font-weight: $beta-font-weight;
 	@include baseline-dimensions(0,3,1);
+	font-weight: 500;
 }
 
 p,
@@ -132,7 +134,7 @@ img {
 
 a {
 	text-decoration: none;
-	color: $alpha-link-color;
+	color: $alpha-ui-color;
 
 	&:visited {
 		color: $alpha-link-colorvisited;
@@ -140,12 +142,12 @@ a {
 
 	&:hover {
 		text-decoration: none;
-		color: $alpha-link-colorhover;
+		color: lighten($alpha-ui-color,10);
 	}
 
 	&:focus {
 		outline: thin dotted;
-		color: $alpha-link-colorfocus;
+		color: lighten($alpha-ui-color,10);
 	}
 
 	&:hover,

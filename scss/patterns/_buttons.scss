@@ -4,7 +4,16 @@
 a.btn {
 	@extend %btn;
 	@include btn-s;
-	@include btn-color;
+}
+
+.btn--pos,
+a.btn--pos {
+	@include btn-color($alpha-ui-color);
+}
+
+.btn--neg,
+a.btn--neg {
+	@include btn-color($grey-color);
 }
 
 .btn-secondary,

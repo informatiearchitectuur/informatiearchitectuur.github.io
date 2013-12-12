@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Second Article"
+post_author: Geoff Blair
+author_url: https://twitter.com/wouterwalgraeve
 date:   2013-12-10 21:05:14
 categories: general
 excerpt: "Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra"

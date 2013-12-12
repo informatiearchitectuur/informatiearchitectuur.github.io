@@ -58,12 +58,14 @@ a.logo:focus {
 
 	float: left;
 	width: 100%;
+	display: none;
 
 	@include em-padding-tb(3, 0);
 
 	@include mq($bp3) {
 		float: right;
 		width: auto;
+		display: block;
 
 		@include em-padding-tb(0);
 	}
@@ -109,6 +111,39 @@ a.logo:focus {
 	}
 }
 
+.main-nav.is-visible {
+	display: block;
+}
+
+.main-nav-trigger {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: -moz-none;
+	-ms-user-select: none;
+	user-select: none;
+
+	width: 2.1em;
+	height: 2.1em;
+	text-indent: -9999px;
+	@include text-dimensions($alpha-font-size,1,1);
+	@include svg-bg("../img/icon-menu", ".png", $alpha-text-color, 50%, no-repeat);
+
+	@include mq($bp3) {
+		display: none;
+	}
+ }
+
+.svg .trigger-active,
+.trigger-active {
+	background-color: $alpha-link-color;
+}
+
 //
 // Footer
 //
@@ -135,5 +170,31 @@ a.logo:focus {
 		color: $white-color;
 		border-bottom: 1px solid lighten($alpha-ui-color,30);
 		text-decoration: none;
+	}
+}
+
+a.chopstick {
+	@include hide-text;
+	display: block;
+
+	border-bottom: 0;
+
+	height: 20px;
+	width: 179px;
+	margin: 0 auto;
+
+	@include em-margin-tb(8,1);
+
+	background-image: url(../img/made--neg.png);
+	background-repeat: no-repeat;
+
+	.svg & {
+		background-image: url(../img/made--neg.svg);
+	}
+
+	&:hover,
+	&:focus,
+	&:visited {
+		border-bottom: 0;
 	}
 }
