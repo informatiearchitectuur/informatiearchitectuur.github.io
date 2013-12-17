@@ -3,7 +3,14 @@
 .btn,
 a.btn {
 	@extend %btn;
-	@include btn-s;
+	@include btn-m;
+	@include em-padding-lr(1);
+	@include transition(all 0.2s ease-in);
+
+	@include mq($bp3) {
+		@include btn-inlineblock;
+		@include em-padding-lr(5);
+	}
 }
 
 .btn--pos,
@@ -16,6 +23,48 @@ a.btn--neg {
 	@include btn-color($grey-color);
 }
 
+.btn--go,
+a.btn--go {
+	position: relative;
+	@include em-padding-lr(1);
+
+	@include mq($bp3) {
+		@include em-padding-lr(5);
+	}
+}
+
+.btn--go:before {
+	content: "\e000";
+
+	font-family: 'icon-font';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+
+	position: absolute;
+	height: 100%;
+	line-height: 2.9;
+	color: #fff;
+
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+
+	left: 70%;
+	top: 0;
+
+	opacity: 0;
+}
+
+
+.btn--go:hover:before {
+	left: 83%;
+	opacity: 1;
+}
+
 .btn-secondary,
 input.btn-secondary,
 input[type="submit"].btn-secondary,
@@ -23,22 +72,9 @@ a.btn-secondary {
 	@extend %btn;
 	@include btn-s;
 	@include btn-color($beta-ui-color);
-}
 
-//
-// Media Queries
-//
-
-@media (min-width: $bp3) {
-
-	.btn,
-	a.btn,
-	.btn-secondary,
-	input.btn-secondary,
-	input[type="submit"].btn-secondary,
-	a.btn-secondary {
+	@include mq($bp3) {
 		@include btn-m;
 		@include btn-inlineblock;
 	}
-
 }

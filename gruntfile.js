@@ -26,7 +26,45 @@ module.exports = function(grunt) {
 		},
 
 		// ———————————————————————————————————————
-		// 2. Jekyll
+		// 2. Assets
+		// ———————————————————————————————————————
+		font: {
+			all: {
+				src: ['icons/source/*.svg'],
+				destCss: 'scss/theme/_icon-font.scss',
+				destFonts: 'fonts/icon-font.{svg,woff,eot,ttf}',
+				cssFormat: 'scss',
+				fontFamily: 'icon-font',
+				cssRouter: function (fontpath) {
+					return '../' + fontpath;
+				}
+			}
+		},
+
+		// SVG to PNG
+		svg2png: {
+			all: {
+				// specify files in array format with multiple src-dest mapping
+				files: [
+					{ src: ['img/*.svg'], dest: 'img/temp' }
+				]
+			}
+		},
+
+		// Image optimisation
+		imagemin: {
+			build: {
+				files: [{
+					expand: true,
+					cwd: 'img/temp/',
+					src: ['**/*.{png,jpg,gif}'],
+					dest: 'img/'
+				}]
+			}
+		},
+
+		// ———————————————————————————————————————
+		// 3. Jekyll
 		// ———————————————————————————————————————
 		jekyll: {
 			options: {
@@ -54,7 +92,7 @@ module.exports = function(grunt) {
 		},
 
 		// ———————————————————————————————————————
-		// 3. Watch
+		// 4. Watch
 		// ———————————————————————————————————————
 		watch: {
 			options: {
@@ -73,6 +111,7 @@ module.exports = function(grunt) {
 			jekyll: {
 				files: [
 					'*.html',
+					'_posts/*.markdown',
 					'_layouts/*.html',
 					'_includes/*.html'
 				],
@@ -125,8 +164,18 @@ module.exports = function(grunt) {
 	grunt.registerTask('default',
 	[
 		'compass',
+		'font',
+		'svg2png',
+		'imagemin',
 		'jekyll:site',
 		'notify:build'
+	]);
+
+	grunt.registerTask('assets',
+	[
+		'font',
+		'svg2png',
+		'imagemin'
 	]);
 
 	grunt.registerTask('server',

@@ -20,7 +20,7 @@ section: blog
 				<h2><a href="{{ site.url }}{{ post.url }}" class="js-block-link">{{ post.title }}</a></h2>
 				<p class="blog__date">{{ post.date | date_to_string }}</p>
 			</header>
-			<p class="media__body">{{ post.excerpt | truncatewords: 20 }}</p>
+			<p class="media__body">{{ post.excerpt | truncate: 100 }}</p>
 		</article>
 	{% endfor %}
 </aside>

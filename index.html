@@ -9,7 +9,7 @@ section: home
 		<div class="inner">
 			<h1>Informatie Architecten in <em>Gent</em>, <em>Genk</em> &amp; <em>er tussenin</em></h1>
 			<p class="intro">Ja! Ook in 2014 komt er een Wereld IA in ons landje. Dit maal gaat <a href="http://www.thesedays.com/" title="These Days">These Days</a> de locatie voorzien op 15 februari. <a href="http://www.nascom.be/" title="Nascom">Nascom</a>, <a href="http://istoireservices.be/" title="iStoire Services">iStoire Services</a> en <a href="http://wijs.be/nl" title="Wijs">Wijs</a> zetten hun schouders mee onder de organisatie.</p>
-			<p><a href="{{ site.url }}/register.html" class="btn btn--pos">Nu inschrijven</a></p>
+			<p><a href="{{ site.url }}/register.html" class="btn btn--pos btn--go">Nu inschrijven</a></p>
 		</div>
 	</div>
 </main>
@@ -21,11 +21,11 @@ section: home
 				<h2><a href="{{ site.url }}{{ post.url }}" class="js-block-link">{{ post.title }}</a></h2>
 				<p class="blog__date">{{ post.date | date_to_string }}</p>
 			</header>
-			<p class="media__body">{{ post.excerpt | truncatewords: 20 }}</p>
+			<p class="media__body">{{ post.excerpt | truncate: 100 }}</p>
 		</article>
 	{% endfor %}
 </aside>
 
 <div class="cta cta--home">
-	<a href="{{ site.url }}/blog.html" title="Blog" class="btn btn--neg">Meer artikels lezen?</a>
+	<a href="{{ site.url }}/blog.html" title="Blog" class="btn btn--neg btn--go">Meer artikels lezen?</a>
 </div>

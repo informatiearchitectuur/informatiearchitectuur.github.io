@@ -165,28 +165,25 @@
 
 	@include mq($bp3) {
 		width: 50%;
-		max-height: 14em;
+		height: 14em;
 		@include em-padding-tb(0.2, 1);
 		@include px-padding-lr(2);
 	}
 
 	@include mq($bp5) {
 		width: 25%;
-		max-height: 18em;
+		height: 17em;
 	}
 }
 
 .media--link {
 	cursor: pointer;
+	@include transition(background-color 0.3s ease-in);
 }
 
-.media--link .media__body {
-	opacity: 1;
-}
-
-.media--link:hover .media__body,
-.media--link:focus .media__body {
-	opacity: 0.8;
+.media--link:hover,
+.media--link:focus {
+	background-color: lighten($grey-color,50);
 }
 
 .share-list {

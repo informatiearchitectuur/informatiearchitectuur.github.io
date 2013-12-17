@@ -8,13 +8,13 @@
 
 		<nav class="main-nav">
 			<ul>
-				{% if page.section contains "home" %}
+				<!-- {% if page.section contains "home" %}
 				{% else %}
 				<li {% if page.url contains "index" %}class="selected"{% endif %}><a href="{{ site.url }}/index.html">Home</a></li>
-				{% endif %}
+				{% endif %} -->
 				<li {% if page.url contains "blog" %}class="selected"{% endif %}><a href="{{ site.url }}/blog.html">Blog</a></li>
+				<li {% if page.url contains "program" %}class="selected"{% endif %}><a href="{{ site.url }}/program.html">Programma</a></li>
 				<li {% if page.url contains "register" %}class="selected"{% endif %}><a href="{{ site.url }}/register.html">Inschrijven</a></li>
-<!-- 				<li {% if page.url contains "styleguide" %}class="selected"{% endif %}><a href="{{ site.url }}/styleguide.html">Styleguide</a></li> -->
 			</ul>
 		</nav>
 	</div>
