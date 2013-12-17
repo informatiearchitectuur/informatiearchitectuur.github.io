@@ -4,11 +4,40 @@ title: Inschrijven
 section: register
 ---
 
-<main class="hero">
+<!-- <main class="hero">
 	<div class="row">
 		<div class="inner">
 			<h1>Inschrijven</h1>
 			<p>Inschrijven maar ...</p>
 		</div>
 	</div>
+	<div class="row">
+		<div class="iframe-embed">
+			<iframe src="http://twikilist.com/embed/WorldIADayGenk" height="3800" width="500" frameborder="0"></iframe>
+		</p>
+	</div>
+</main> -->
+
+<main class="main">
+	<div class="row">
+		<header class="main__header">
+			<h1>{{ page.title }}</h1>
+			<p>Inschrijven maar ...</p>
+		</header>
+		<div class="iframe-embed main__body">
+			<iframe src="http://twikilist.com/embed/WorldIADayGenk" frameborder="0"></iframe>
+		</div>
+	</div>
 </main>
+
+<aside class="blog blog--list">
+	{% for post in site.posts limit:4 %}
+		<article class="media media--block media--link js-link-block">
+			<header class="media__header">
+				<h2><a href="{{ site.url }}{{ post.url }}" class="js-block-link">{{ post.title }}</a></h2>
+				<p class="blog__date">{{ post.date | date_to_string }}</p>
+			</header>
+			<p class="media__body">{{ post.excerpt | truncate: 100 }}</p>
+		</article>
+	{% endfor %}
+</aside>
