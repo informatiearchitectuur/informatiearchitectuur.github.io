@@ -3,7 +3,7 @@ markdown: redcarpet
 pygments: true
 paginate: 1
 
-url: http://informatiearchitectuur.dev/_site
+url: http://informatiearchitectuur.github.io/
 
 exclude: ['_site', 'scss','*scss','Gem*','Guard*','*rb','.sass-cache','.git*','config.rb','*.md','*.json']
 
