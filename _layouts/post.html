@@ -34,6 +34,11 @@
 		Place all other favicons in website root (e.g. http://web.dev/favicon.ico).
 		Add your font license here, if necessary.
 	-->
+
+	<meta property="og:image" content="img/facebook.jpg" />
+	<meta property="og:title" content="{{ page.title }}"/>
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
+	<meta property="og:description" content="{{ post.excerpt }}"/>
 </head>
 
 <body{% if page.section %} class="v-{{ page.section }}"{% endif%} >
