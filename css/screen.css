@@ -1484,16 +1484,15 @@ a.chopstick {
   .hero .prelude {
     font-family: "Fira Sans", sans-serif;
     color: #444444;
-    font-style: italic;
     padding-bottom: 0; }
 
-/* line 57, ../scss/theme/modules/_main.scss */
+/* line 56, ../scss/theme/modules/_main.scss */
 .blog,
 .main,
 .cta {
   background-color: white; }
 
-/* line 62, ../scss/theme/modules/_main.scss */
+/* line 61, ../scss/theme/modules/_main.scss */
 .main__header {
   width: 100%;
   float: left;
@@ -1503,7 +1502,7 @@ a.chopstick {
   padding-top: 0.625em;
   padding-bottom: 1.875em; }
   @media screen and (min-width: 42.5em) {
-    /* line 62, ../scss/theme/modules/_main.scss */
+    /* line 61, ../scss/theme/modules/_main.scss */
     .main__header {
       text-align: center;
       width: 66.66667%;
@@ -1514,7 +1513,7 @@ a.chopstick {
       left: 16.66667%;
       padding-top: 4.375em;
       padding-bottom: 1.875em; } }
-  /* line 73, ../scss/theme/modules/_main.scss */
+  /* line 72, ../scss/theme/modules/_main.scss */
   .main__header p {
     color: #777777;
     font-size: 1em;
@@ -1522,43 +1521,43 @@ a.chopstick {
     padding-top: 0.4375em;
     padding-bottom: 1.3125em; }
 
-/* line 83, ../scss/theme/modules/_main.scss */
+/* line 82, ../scss/theme/modules/_main.scss */
 .blog--list {
   border-top: 6px solid #efefef; }
 
-/* line 87, ../scss/theme/modules/_main.scss */
+/* line 86, ../scss/theme/modules/_main.scss */
 .blog--list__title {
   font-weight: 500;
   padding: 0; }
 
-/* line 92, ../scss/theme/modules/_main.scss */
+/* line 91, ../scss/theme/modules/_main.scss */
 .blog--list__date {
   font-family: "Fira Sans", sans-serif;
   color: #777777;
   padding: 0; }
 
-/* line 98, ../scss/theme/modules/_main.scss */
+/* line 97, ../scss/theme/modules/_main.scss */
 .blog--list__link {
   margin-top: 1.25em;
   margin-bottom: 0em; }
 
-/* line 102, ../scss/theme/modules/_main.scss */
+/* line 101, ../scss/theme/modules/_main.scss */
 .blog--list__link a {
   border-bottom: 1px solid #90befa; }
-  /* line 106, ../scss/theme/modules/_main.scss */
+  /* line 105, ../scss/theme/modules/_main.scss */
   .blog--list__link a:hover, .blog--list__link a:focus {
     border-bottom: 1px solid #c1dafc; }
 
-/* line 113, ../scss/theme/modules/_main.scss */
+/* line 112, ../scss/theme/modules/_main.scss */
 .blog--detail {
   padding-top: 0.625em;
   padding-bottom: 1.875em; }
   @media screen and (min-width: 42.5em) {
-    /* line 113, ../scss/theme/modules/_main.scss */
+    /* line 112, ../scss/theme/modules/_main.scss */
     .blog--detail {
       padding-top: 4.375em;
       padding-bottom: 5.625em; } }
-  /* line 120, ../scss/theme/modules/_main.scss */
+  /* line 119, ../scss/theme/modules/_main.scss */
   .blog--detail .tagline {
     padding-left: 5px;
     color: #777777;
@@ -1566,26 +1565,26 @@ a.chopstick {
     line-height: 1.75;
     padding-top: 0.4375em;
     padding-bottom: 1.3125em; }
-  /* line 126, ../scss/theme/modules/_main.scss */
+  /* line 125, ../scss/theme/modules/_main.scss */
   .blog--detail em {
     font-weight: 300; }
-  /* line 130, ../scss/theme/modules/_main.scss */
+  /* line 129, ../scss/theme/modules/_main.scss */
   .blog--detail img {
     margin-top: 0.3125em;
     margin-bottom: 0.625em; }
-  /* line 134, ../scss/theme/modules/_main.scss */
+  /* line 133, ../scss/theme/modules/_main.scss */
   .blog--detail a {
     border-bottom: 1px solid #90befa; }
-    /* line 138, ../scss/theme/modules/_main.scss */
+    /* line 137, ../scss/theme/modules/_main.scss */
     .blog--detail a:hover, .blog--detail a:focus {
       border-bottom: 1px solid #2e84f6; }
 
-/* line 144, ../scss/theme/modules/_main.scss */
+/* line 143, ../scss/theme/modules/_main.scss */
 .header__details {
   font-family: "Fira Sans", sans-serif;
   color: #777777; }
 
-/* line 149, ../scss/theme/modules/_main.scss */
+/* line 148, ../scss/theme/modules/_main.scss */
 .blog--detail__header {
   width: 100%;
   float: left;
@@ -1596,7 +1595,7 @@ a.chopstick {
   margin-top: 0em;
   margin-bottom: 2.5em; }
   @media screen and (min-width: 42.5em) {
-    /* line 149, ../scss/theme/modules/_main.scss */
+    /* line 148, ../scss/theme/modules/_main.scss */
     .blog--detail__header {
       text-align: center;
       width: 66.66667%;
@@ -1606,7 +1605,7 @@ a.chopstick {
       padding-right: 0px;
       left: 16.66667%; } }
 
-/* line 161, ../scss/theme/modules/_main.scss */
+/* line 160, ../scss/theme/modules/_main.scss */
 .blog--detail__body {
   width: 100%;
   float: left;
@@ -1614,7 +1613,7 @@ a.chopstick {
   padding-left: 0px;
   padding-right: 0px; }
   @media screen and (min-width: 42.5em) {
-    /* line 161, ../scss/theme/modules/_main.scss */
+    /* line 160, ../scss/theme/modules/_main.scss */
     .blog--detail__body {
       width: 66.66667%;
       float: left;
@@ -1622,16 +1621,16 @@ a.chopstick {
       padding-left: 0px;
       padding-right: 0px;
       left: 16.66667%; } }
-  /* line 169, ../scss/theme/modules/_main.scss */
+  /* line 168, ../scss/theme/modules/_main.scss */
   .blog--detail__body p {
     overflow: visible; }
   @media screen and (min-width: 42.5em) {
-    /* line 173, ../scss/theme/modules/_main.scss */
+    /* line 172, ../scss/theme/modules/_main.scss */
     .blog--detail__body img {
       margin-left: -24%;
       min-width: 147.5%; } }
 
-/* line 181, ../scss/theme/modules/_main.scss */
+/* line 180, ../scss/theme/modules/_main.scss */
 .share-list {
   list-style: none;
   margin: 0;
@@ -1639,25 +1638,25 @@ a.chopstick {
   margin-top: 1.875em;
   margin-bottom: 0em; }
 
-/* line 189, ../scss/theme/modules/_main.scss */
+/* line 188, ../scss/theme/modules/_main.scss */
 .cta {
   text-align: center;
   padding-left: 10px;
   padding-right: 10px; }
 
-/* line 194, ../scss/theme/modules/_main.scss */
+/* line 193, ../scss/theme/modules/_main.scss */
 .cta--home {
   padding-top: 2.5em;
   padding-bottom: 2.5em;
   background-color: #444444; }
 
-/* line 199, ../scss/theme/modules/_main.scss */
+/* line 198, ../scss/theme/modules/_main.scss */
 .cta--post {
   border-top: 6px solid #efefef;
   padding-top: 1.25em;
   padding-bottom: 2.5em; }
 
-/* line 210, ../scss/theme/modules/_main.scss */
+/* line 209, ../scss/theme/modules/_main.scss */
 .media--block {
   float: left;
   width: 100%;
@@ -1667,44 +1666,44 @@ a.chopstick {
   padding-right: 5px;
   border-bottom: 1px dotted #d0d0d0; }
   @media screen and (min-width: 42.5em) {
-    /* line 210, ../scss/theme/modules/_main.scss */
+    /* line 209, ../scss/theme/modules/_main.scss */
     .media--block {
       padding-top: 1.25em;
       padding-bottom: 1.25em;
       padding-left: 10px;
       padding-right: 10px; } }
   @media screen and (min-width: 71.25em) {
-    /* line 210, ../scss/theme/modules/_main.scss */
+    /* line 209, ../scss/theme/modules/_main.scss */
     .media--block {
       padding-top: 1.875em;
       padding-bottom: 1.875em; } }
 
-/* line 227, ../scss/theme/modules/_main.scss */
+/* line 226, ../scss/theme/modules/_main.scss */
 .media__header {
   width: 100%;
   padding-top: 0.625em;
   padding-bottom: 0.625em; }
   @media screen and (min-width: 42.5em) {
-    /* line 227, ../scss/theme/modules/_main.scss */
+    /* line 226, ../scss/theme/modules/_main.scss */
     .media__header {
       float: left;
       width: 30%;
       padding-left: 0px;
       padding-right: 10px; } }
 
-/* line 239, ../scss/theme/modules/_main.scss */
+/* line 238, ../scss/theme/modules/_main.scss */
 .media__body {
   width: 100%;
   padding-top: 0.625em;
   padding-bottom: 0.625em; }
   @media screen and (min-width: 42.5em) {
-    /* line 239, ../scss/theme/modules/_main.scss */
+    /* line 238, ../scss/theme/modules/_main.scss */
     .media__body {
       float: left;
       width: 70%;
       padding-left: 10px;
       padding-right: 0px; } }
-  /* line 249, ../scss/theme/modules/_main.scss */
+  /* line 248, ../scss/theme/modules/_main.scss */
   .media__body p {
     padding: 0; }
 
