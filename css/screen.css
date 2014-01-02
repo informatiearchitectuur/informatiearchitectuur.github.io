@@ -41,62 +41,6 @@
   font-style: italic; }
 
 @font-face {
-  font-family: 'Fira Sans';
-  src: url("../fonts/eot/FiraSans-Bold.eot");
-  src: local("Fira Sans Bold"), url("../fonts/eot/FiraSans-Bold.eot") format("embedded-opentype"), url("../fonts/woff/FiraSans-Bold.woff") format("woff"), url("../fonts/ttf/FiraSans-Bold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Fira Sans';
-  src: url("../fonts/eot/FiraSans-BoldItalic.eot");
-  src: local("Fira Sans Bold Italic"), url("../fonts/eot/FiraSans-BoldItalic.eot") format("embedded-opentype"), url("../fonts/woff/FiraSans-BoldItalic.woff") format("woff"), url("../fonts/ttf/FiraSans-BoldItalic.ttf") format("truetype");
-  font-weight: 600;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Fira Mono';
-  src: url("../fonts/eot/FiraMono-Regular.eot");
-  src: local("Fira Mono"), url("../fonts/eot/FiraMono-Regular.eot") format("embedded-opentype"), url("../fonts/woff/FiraMono-Regular.woff") format("woff"), url("../fonts/ttf/FiraMono-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Fira Mono';
-  src: url("../fonts/eot/FiraMono-Bold.eot");
-  src: local("Fira Mono Bold"), url("../fonts/eot/FiraMono-Bold.eot") format("embedded-opentype"), url("../fonts/woff/FiraMono-Bold.woff") format("woff"), url("../fonts/ttf/FiraMono-Bold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'merriweather';
-  src: url("../fonts/eot/merriweather-bold-webfont.eot");
-  src: url("../fonts/eot/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/merriweather-bold-webfont.woff") format("woff"), url("../fonts/ttf/merriweather-bold-webfont.ttf") format("truetype"), url("../fonts/svg/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
-  font-weight: 700;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'merriweather';
-  src: url("../fonts/eot/merriweather-bolditalic-webfont.eot");
-  src: url("../fonts/eot/merriweather-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/merriweather-bolditalic-webfont.woff") format("woff"), url("../fonts/ttf/merriweather-bolditalic-webfont.ttf") format("truetype"), url("../fonts/svg/merriweather-bolditalic-webfont.svg#merriweatherbold_italic") format("svg");
-  font-weight: 700;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'merriweather';
-  src: url("../fonts/eot/merriweather-italic-webfont.eot");
-  src: url("../fonts/eot/merriweather-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/merriweather-italic-webfont.woff") format("woff"), url("../fonts/ttf/merriweather-italic-webfont.ttf") format("truetype"), url("../fonts/svg/merriweather-italic-webfont.svg#merriweatheritalic") format("svg");
-  font-weight: normal;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'merriweather';
-  src: url("../fonts/eot/merriweather-regular-webfont.eot");
-  src: url("../fonts/eot/merriweather-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/merriweather-regular-webfont.woff") format("woff"), url("../fonts/ttf/merriweather-regular-webfont.ttf") format("truetype"), url("../fonts/svg/merriweather-regular-webfont.svg#merriweatherregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
   font-family: "icon-font";
   src: url("../fonts/icon-font.eot");
   src: url("../fonts/icon-font.eot?#iefix") format("embedded-opentype"), url("../fonts/icon-font.woff") format("woff"), url("../fonts/icon-font.ttf") format("truetype"), url("../fonts/icon-font.svg#icomoon") format("svg");
@@ -939,7 +883,7 @@ hr {
   border: none;
   border-bottom: 1px solid #dddddd;
   clear: both;
-  margin-top: 0.9375em;
+  margin-top: 1.875em;
   margin-bottom: 0.625em; }
 
 /* line 46, ../scss/theme/_base.scss */
@@ -1513,6 +1457,9 @@ a.chopstick {
         padding-right: 0px;
         left: 16.66667%; } }
   /* line 22, ../scss/theme/modules/_main.scss */
+  .hero h1 {
+    padding-top: 0; }
+  /* line 26, ../scss/theme/modules/_main.scss */
   .hero p {
     padding-left: 5px;
     color: #777777;
@@ -1520,32 +1467,33 @@ a.chopstick {
     line-height: 1.75;
     padding-top: 0.4375em;
     padding-bottom: 1.3125em; }
-  /* line 28, ../scss/theme/modules/_main.scss */
+  /* line 32, ../scss/theme/modules/_main.scss */
   .hero em {
-    font-weight: 300; }
-  /* line 33, ../scss/theme/modules/_main.scss */
+    font-weight: 300;
+    font-style: italic; }
+  /* line 38, ../scss/theme/modules/_main.scss */
   .hero .intro a,
   .hero p a {
     border-bottom: 1px solid #90befa; }
-    /* line 37, ../scss/theme/modules/_main.scss */
+    /* line 42, ../scss/theme/modules/_main.scss */
     .hero .intro a:hover, .hero .intro a:focus,
     .hero p a:hover,
     .hero p a:focus {
       border-bottom: 1px solid #c1dafc; }
-  /* line 42, ../scss/theme/modules/_main.scss */
+  /* line 47, ../scss/theme/modules/_main.scss */
   .hero .prelude {
     font-family: "Fira Sans", sans-serif;
     color: #444444;
     font-style: italic;
     padding-bottom: 0; }
 
-/* line 52, ../scss/theme/modules/_main.scss */
+/* line 57, ../scss/theme/modules/_main.scss */
 .blog,
 .main,
 .cta {
   background-color: white; }
 
-/* line 57, ../scss/theme/modules/_main.scss */
+/* line 62, ../scss/theme/modules/_main.scss */
 .main__header {
   width: 100%;
   float: left;
@@ -1555,7 +1503,7 @@ a.chopstick {
   padding-top: 0.625em;
   padding-bottom: 1.875em; }
   @media screen and (min-width: 42.5em) {
-    /* line 57, ../scss/theme/modules/_main.scss */
+    /* line 62, ../scss/theme/modules/_main.scss */
     .main__header {
       text-align: center;
       width: 66.66667%;
@@ -1566,7 +1514,7 @@ a.chopstick {
       left: 16.66667%;
       padding-top: 4.375em;
       padding-bottom: 1.875em; } }
-  /* line 68, ../scss/theme/modules/_main.scss */
+  /* line 73, ../scss/theme/modules/_main.scss */
   .main__header p {
     color: #777777;
     font-size: 1em;
@@ -1574,44 +1522,43 @@ a.chopstick {
     padding-top: 0.4375em;
     padding-bottom: 1.3125em; }
 
-/* line 78, ../scss/theme/modules/_main.scss */
+/* line 83, ../scss/theme/modules/_main.scss */
 .blog--list {
   border-top: 6px solid #efefef; }
 
-/* line 82, ../scss/theme/modules/_main.scss */
+/* line 87, ../scss/theme/modules/_main.scss */
 .blog--list__title {
   font-weight: 500;
   padding: 0; }
 
-/* line 87, ../scss/theme/modules/_main.scss */
+/* line 92, ../scss/theme/modules/_main.scss */
 .blog--list__date {
   font-family: "Fira Sans", sans-serif;
-  font-style: italic;
   color: #777777;
   padding: 0; }
 
-/* line 94, ../scss/theme/modules/_main.scss */
+/* line 98, ../scss/theme/modules/_main.scss */
 .blog--list__link {
   margin-top: 1.25em;
   margin-bottom: 0em; }
 
-/* line 98, ../scss/theme/modules/_main.scss */
+/* line 102, ../scss/theme/modules/_main.scss */
 .blog--list__link a {
   border-bottom: 1px solid #90befa; }
-  /* line 102, ../scss/theme/modules/_main.scss */
+  /* line 106, ../scss/theme/modules/_main.scss */
   .blog--list__link a:hover, .blog--list__link a:focus {
     border-bottom: 1px solid #c1dafc; }
 
-/* line 109, ../scss/theme/modules/_main.scss */
+/* line 113, ../scss/theme/modules/_main.scss */
 .blog--detail {
   padding-top: 0.625em;
   padding-bottom: 1.875em; }
   @media screen and (min-width: 42.5em) {
-    /* line 109, ../scss/theme/modules/_main.scss */
+    /* line 113, ../scss/theme/modules/_main.scss */
     .blog--detail {
       padding-top: 4.375em;
       padding-bottom: 5.625em; } }
-  /* line 116, ../scss/theme/modules/_main.scss */
+  /* line 120, ../scss/theme/modules/_main.scss */
   .blog--detail .tagline {
     padding-left: 5px;
     color: #777777;
@@ -1619,27 +1566,26 @@ a.chopstick {
     line-height: 1.75;
     padding-top: 0.4375em;
     padding-bottom: 1.3125em; }
-  /* line 122, ../scss/theme/modules/_main.scss */
+  /* line 126, ../scss/theme/modules/_main.scss */
   .blog--detail em {
     font-weight: 300; }
-  /* line 126, ../scss/theme/modules/_main.scss */
+  /* line 130, ../scss/theme/modules/_main.scss */
   .blog--detail img {
     margin-top: 0.3125em;
     margin-bottom: 0.625em; }
-  /* line 130, ../scss/theme/modules/_main.scss */
+  /* line 134, ../scss/theme/modules/_main.scss */
   .blog--detail a {
     border-bottom: 1px solid #90befa; }
-    /* line 134, ../scss/theme/modules/_main.scss */
+    /* line 138, ../scss/theme/modules/_main.scss */
     .blog--detail a:hover, .blog--detail a:focus {
       border-bottom: 1px solid #2e84f6; }
 
-/* line 140, ../scss/theme/modules/_main.scss */
+/* line 144, ../scss/theme/modules/_main.scss */
 .header__details {
   font-family: "Fira Sans", sans-serif;
-  font-style: italic;
   color: #777777; }
 
-/* line 146, ../scss/theme/modules/_main.scss */
+/* line 149, ../scss/theme/modules/_main.scss */
 .blog--detail__header {
   width: 100%;
   float: left;
@@ -1650,7 +1596,7 @@ a.chopstick {
   margin-top: 0em;
   margin-bottom: 2.5em; }
   @media screen and (min-width: 42.5em) {
-    /* line 146, ../scss/theme/modules/_main.scss */
+    /* line 149, ../scss/theme/modules/_main.scss */
     .blog--detail__header {
       text-align: center;
       width: 66.66667%;
@@ -1660,7 +1606,7 @@ a.chopstick {
       padding-right: 0px;
       left: 16.66667%; } }
 
-/* line 158, ../scss/theme/modules/_main.scss */
+/* line 161, ../scss/theme/modules/_main.scss */
 .blog--detail__body {
   width: 100%;
   float: left;
@@ -1668,7 +1614,7 @@ a.chopstick {
   padding-left: 0px;
   padding-right: 0px; }
   @media screen and (min-width: 42.5em) {
-    /* line 158, ../scss/theme/modules/_main.scss */
+    /* line 161, ../scss/theme/modules/_main.scss */
     .blog--detail__body {
       width: 66.66667%;
       float: left;
@@ -1676,16 +1622,16 @@ a.chopstick {
       padding-left: 0px;
       padding-right: 0px;
       left: 16.66667%; } }
-  /* line 166, ../scss/theme/modules/_main.scss */
+  /* line 169, ../scss/theme/modules/_main.scss */
   .blog--detail__body p {
     overflow: visible; }
   @media screen and (min-width: 42.5em) {
-    /* line 170, ../scss/theme/modules/_main.scss */
+    /* line 173, ../scss/theme/modules/_main.scss */
     .blog--detail__body img {
       margin-left: -24%;
       min-width: 147.5%; } }
 
-/* line 178, ../scss/theme/modules/_main.scss */
+/* line 181, ../scss/theme/modules/_main.scss */
 .share-list {
   list-style: none;
   margin: 0;
@@ -1693,25 +1639,25 @@ a.chopstick {
   margin-top: 1.875em;
   margin-bottom: 0em; }
 
-/* line 186, ../scss/theme/modules/_main.scss */
+/* line 189, ../scss/theme/modules/_main.scss */
 .cta {
   text-align: center;
   padding-left: 10px;
   padding-right: 10px; }
 
-/* line 191, ../scss/theme/modules/_main.scss */
+/* line 194, ../scss/theme/modules/_main.scss */
 .cta--home {
   padding-top: 2.5em;
   padding-bottom: 2.5em;
   background-color: #444444; }
 
-/* line 196, ../scss/theme/modules/_main.scss */
+/* line 199, ../scss/theme/modules/_main.scss */
 .cta--post {
   border-top: 6px solid #efefef;
   padding-top: 1.25em;
   padding-bottom: 2.5em; }
 
-/* line 207, ../scss/theme/modules/_main.scss */
+/* line 210, ../scss/theme/modules/_main.scss */
 .media--block {
   float: left;
   width: 100%;
@@ -1721,44 +1667,44 @@ a.chopstick {
   padding-right: 5px;
   border-bottom: 1px dotted #d0d0d0; }
   @media screen and (min-width: 42.5em) {
-    /* line 207, ../scss/theme/modules/_main.scss */
+    /* line 210, ../scss/theme/modules/_main.scss */
     .media--block {
       padding-top: 1.25em;
       padding-bottom: 1.25em;
       padding-left: 10px;
       padding-right: 10px; } }
   @media screen and (min-width: 71.25em) {
-    /* line 207, ../scss/theme/modules/_main.scss */
+    /* line 210, ../scss/theme/modules/_main.scss */
     .media--block {
       padding-top: 1.875em;
       padding-bottom: 1.875em; } }
 
-/* line 224, ../scss/theme/modules/_main.scss */
+/* line 227, ../scss/theme/modules/_main.scss */
 .media__header {
   width: 100%;
   padding-top: 0.625em;
   padding-bottom: 0.625em; }
   @media screen and (min-width: 42.5em) {
-    /* line 224, ../scss/theme/modules/_main.scss */
+    /* line 227, ../scss/theme/modules/_main.scss */
     .media__header {
       float: left;
       width: 30%;
       padding-left: 0px;
       padding-right: 10px; } }
 
-/* line 236, ../scss/theme/modules/_main.scss */
+/* line 239, ../scss/theme/modules/_main.scss */
 .media__body {
   width: 100%;
   padding-top: 0.625em;
   padding-bottom: 0.625em; }
   @media screen and (min-width: 42.5em) {
-    /* line 236, ../scss/theme/modules/_main.scss */
+    /* line 239, ../scss/theme/modules/_main.scss */
     .media__body {
       float: left;
       width: 70%;
       padding-left: 10px;
       padding-right: 0px; } }
-  /* line 246, ../scss/theme/modules/_main.scss */
+  /* line 249, ../scss/theme/modules/_main.scss */
   .media__body p {
     padding: 0; }
 

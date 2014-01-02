@@ -19,6 +19,10 @@
 		}
 	}
 
+	h1 {
+		padding-top: 0;
+	}
+
 	p {
 		padding-left: 5px;
 		color: $beta-text-color;
@@ -27,6 +31,7 @@
 
 	em {
 		font-weight: 300;
+		font-style: italic;
 	}
 
 	.intro a,
@@ -86,7 +91,6 @@
 
 .blog--list__date {
 	font-family: $beta-font-family;
-	font-style: italic;
 	color: $beta-text-color;
 	padding: 0;
 }
@@ -139,7 +143,6 @@
 
 .header__details {
 	font-family: $beta-font-family;
-	font-style: italic;
 	color: $beta-text-color;
 }
 

@@ -40,7 +40,7 @@ hr {
 	border-bottom: 1px solid lighten($alpha-text-color,60);
 
 	clear: both;
-	@include em-margin-tb(1.5,1);
+	@include em-margin-tb(3,1);
 }
 
 .divider--dotted {

@@ -1,9 +1,9 @@
-$right-font-family: "icon-font";
-$right-value: "\e000";
-$right: "icon-font" "\e000";
 $plus-font-family: "icon-font";
 $plus-value: "\e001";
 $plus: "icon-font" "\e001";
+$right-font-family: "icon-font";
+$right-value: "\e000";
+$right: "icon-font" "\e000";
 
 @mixin icon-font-family($char) {
   font-family: nth($char, 1);
