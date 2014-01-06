@@ -4,11 +4,11 @@
     <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="symbol" sketch:type="MSArtboardGroup">
+        <g id="logo" sketch:type="MSArtboardGroup">
             <g id="Imported-Layers" sketch:type="MSLayerGroup">
-                <path d="M42.3078648,11.2667413 L34.7623289,0.4921875 L27.2987912,11.1492106 L34.8443271,21.9234228 L42.3078648,11.2667413" id="Fill-23" fill="#0A69E7" sketch:type="MSShapeGroup"></path>
-                <path d="M69.2329745,49.713271 L44.6164537,14.563066 L19.9995913,49.713271 L69.2329745,49.713271" id="Fill-24" fill="#282828" sketch:type="MSShapeGroup"></path>
-                <path d="M24.9898606,14.4462186 L0.291,49.713271 L15.3820718,49.713271 L32.5357381,25.2197474 L24.9898606,14.4462186" id="Fill-25" fill="#282828" sketch:type="MSShapeGroup"></path>
+                <path d="M41.9392587,10.6562184 L34.4103716,-0.0937343063 L26.9636389,10.5389524 L34.492526,21.288905 L41.9392587,10.6562184" id="Fill-1" fill="#0969E7" sketch:type="MSShapeGroup"></path>
+                <path d="M51.986638,49.0161811 L68.8027206,49.0161811 L44.2423087,13.945121 L19.681215,49.0161811 L36.4976385,49.0161811 L44.2423087,37.9573824 L51.986638,49.0161811" id="Fill-2" fill="#282828" sketch:type="MSShapeGroup"></path>
+                <path d="M24.6602481,13.8285367 L0.017,49.0161811 L15.0740924,49.0161811 L32.1891352,24.5781485 L24.6602481,13.8285367" id="Fill-3" fill="#282828" sketch:type="MSShapeGroup"></path>
             </g>
         </g>
     </g>
