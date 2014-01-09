@@ -1257,7 +1257,7 @@ a.logo {
   padding: 0;
   float: left;
   display: block;
-  padding-left: 90px;
+  padding-left: 80px;
   padding-right: 0px;
   font-family: "Fira Sans", sans-serif;
   font-size: 17px;
@@ -1265,7 +1265,7 @@ a.logo {
   padding-top: 5px;
   font-style: italic;
   color: #444444;
-  width: 195px;
+  width: 280px;
   height: 50px;
   background-image: url("../img/logo.png");
   background-repeat: no-repeat; }
@@ -1274,13 +1274,17 @@ a.logo {
   a.logo {
     background-image: url("../img/logo.svg"); }
 
-/* line 51, ../scss/theme/_frame.scss */
+/* line 50, ../scss/theme/_frame.scss */
+.logo__date {
+  color: #b3b3b3; }
+
+/* line 55, ../scss/theme/_frame.scss */
 a.logo:hover,
 a.logo:focus {
   text-decoration: none;
   color: #0a69e7; }
 
-/* line 56, ../scss/theme/_frame.scss */
+/* line 60, ../scss/theme/_frame.scss */
 .main-nav {
   margin: 0;
   padding: 0;
@@ -1290,14 +1294,14 @@ a.logo:focus {
   padding-top: 1.875em;
   padding-bottom: 0em; }
   @media screen and (min-width: 42.5em) {
-    /* line 56, ../scss/theme/_frame.scss */
+    /* line 60, ../scss/theme/_frame.scss */
     .main-nav {
       float: right;
       width: auto;
       display: block;
       padding-top: 0em;
       padding-bottom: 0em; } }
-  /* line 73, ../scss/theme/_frame.scss */
+  /* line 77, ../scss/theme/_frame.scss */
   .main-nav ul {
     margin: 0;
     padding: 0;
@@ -1310,7 +1314,7 @@ a.logo:focus {
     font-family: "Fira Sans", sans-serif;
     border-top: 1px dotted #c3c3c3; }
     @media screen and (min-width: 42.5em) {
-      /* line 73, ../scss/theme/_frame.scss */
+      /* line 77, ../scss/theme/_frame.scss */
       .main-nav ul {
         border-top: none; }
         /* line 33, ../scss/shared/_mixins.scss */
@@ -1318,37 +1322,37 @@ a.logo:focus {
           display: block;
           float: left;
           zoom: 1; } }
-  /* line 87, ../scss/theme/_frame.scss */
+  /* line 91, ../scss/theme/_frame.scss */
   .main-nav li {
     padding-top: 1.25em;
     padding-bottom: 0em; }
     @media screen and (min-width: 42.5em) {
-      /* line 87, ../scss/theme/_frame.scss */
+      /* line 91, ../scss/theme/_frame.scss */
       .main-nav li {
         padding-top: 0.625em;
         padding-bottom: 0.625em;
         margin-left: 20px;
         margin-right: 10px; } }
-  /* line 96, ../scss/theme/_frame.scss */
+  /* line 100, ../scss/theme/_frame.scss */
   .main-nav a {
     color: #0a69e7;
     text-decoration: none;
     font-weight: 500;
     border-bottom: 1px solid #90befa; }
-    /* line 102, ../scss/theme/_frame.scss */
+    /* line 106, ../scss/theme/_frame.scss */
     .main-nav a:hover {
       color: #2e84f6;
       border-bottom: 1px solid #c1dafc; }
-  /* line 108, ../scss/theme/_frame.scss */
+  /* line 112, ../scss/theme/_frame.scss */
   .main-nav .selected a {
     color: #444444;
     border-bottom: none; }
 
-/* line 114, ../scss/theme/_frame.scss */
+/* line 118, ../scss/theme/_frame.scss */
 .main-nav.is-visible {
   display: block; }
 
-/* line 118, ../scss/theme/_frame.scss */
+/* line 122, ../scss/theme/_frame.scss */
 .main-nav-trigger {
   display: block;
   position: absolute;
@@ -1360,8 +1364,8 @@ a.logo:focus {
   -moz-user-select: -moz-none;
   -ms-user-select: none;
   user-select: none;
-  width: 2.1em;
-  height: 2.1em;
+  width: 2.5em;
+  height: 2.5em;
   text-indent: -9999px;
   font-size: 1em;
   line-height: 1.5em;
@@ -1373,38 +1377,38 @@ a.logo:focus {
     background: #444444 url("../img/icon-menu.svg") 50% no-repeat;
     background-size: auto; }
   @media screen and (min-width: 42.5em) {
-    /* line 118, ../scss/theme/_frame.scss */
+    /* line 122, ../scss/theme/_frame.scss */
     .main-nav-trigger {
       display: none; } }
 
-/* line 143, ../scss/theme/_frame.scss */
+/* line 147, ../scss/theme/_frame.scss */
 .svg .trigger-active,
 .trigger-active {
   background-color: #0a69e7; }
 
-/* line 151, ../scss/theme/_frame.scss */
+/* line 155, ../scss/theme/_frame.scss */
 .footer {
   background-color: #0a69e7;
   color: white;
   padding-top: 2.5em;
   padding-bottom: 2.1875em;
   text-align: center; }
-  /* line 158, ../scss/theme/_frame.scss */
+  /* line 162, ../scss/theme/_frame.scss */
   .footer p {
     padding-bottom: 0; }
-  /* line 163, ../scss/theme/_frame.scss */
+  /* line 167, ../scss/theme/_frame.scss */
   .footer a,
   .footer a:visited {
     color: #c1dafc;
     border-bottom: 1px solid #2e84f6; }
-  /* line 169, ../scss/theme/_frame.scss */
+  /* line 173, ../scss/theme/_frame.scss */
   .footer a:hover,
   .footer a:focus {
     color: white;
     border-bottom: 1px solid #90befa;
     text-decoration: none; }
 
-/* line 176, ../scss/theme/_frame.scss */
+/* line 180, ../scss/theme/_frame.scss */
 a.chopstick {
   overflow: hidden;
   display: block;
@@ -1422,10 +1426,10 @@ a.chopstick {
     display: block;
     width: 0;
     height: 100%; }
-  /* line 191, ../scss/theme/_frame.scss */
+  /* line 195, ../scss/theme/_frame.scss */
   .svg a.chopstick {
     background-image: url(../img/made--neg.svg); }
-  /* line 197, ../scss/theme/_frame.scss */
+  /* line 201, ../scss/theme/_frame.scss */
   a.chopstick:hover, a.chopstick:focus, a.chopstick:visited {
     border-bottom: 0; }
 

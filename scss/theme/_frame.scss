@@ -27,7 +27,7 @@ a.logo {
 	float: left;
 	display: block;
 
-	@include px-padding-lr(9,0);
+	@include px-padding-lr(8,0);
 
 	font-family: $beta-font-family;
 	font-size: 17px;
@@ -36,7 +36,7 @@ a.logo {
 	font-style: italic;
 	color: $alpha-text-color;
 
-	width: 195px;
+	width: 280px;
 	height: 50px;
 
 	background-image: url('../img/logo.png');
@@ -45,6 +45,10 @@ a.logo {
 	.svg & {
 		background-image: url('../img/logo.svg');
 	}
+}
+
+.logo__date {
+	color: lighten($dark-color,70);
 }
 
 a.logo:hover,
@@ -128,8 +132,8 @@ a.logo:focus {
 	-ms-user-select: none;
 	user-select: none;
 
-	width: 2.1em;
-	height: 2.1em;
+	width: 2.5em;
+	height: 2.5em;
 	text-indent: -9999px;
 	@include text-dimensions($alpha-font-size,1,1);
 	@include svg-bg("../img/icon-menu", ".png", $alpha-text-color, 50%, no-repeat);
