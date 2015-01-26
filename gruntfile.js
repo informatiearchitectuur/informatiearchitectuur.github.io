@@ -28,19 +28,6 @@ module.exports = function(grunt) {
 		// ———————————————————————————————————————
 		// 2. Assets
 		// ———————————————————————————————————————
-		font: {
-			all: {
-				src: ['icons/source/*.svg'],
-				destCss: 'scss/theme/_icon-font.scss',
-				destFonts: 'fonts/icon-font.{svg,woff,eot,ttf}',
-				cssFormat: 'scss',
-				fontFamily: 'icon-font',
-				cssRouter: function (fontpath) {
-					return '../' + fontpath;
-				}
-			}
-		},
-
 		// SVG to PNG
 		svg2png: {
 			all: {
@@ -164,7 +151,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('default',
 	[
 		'compass',
-		'font',
 		'svg2png',
 		'imagemin',
 		'jekyll:site',

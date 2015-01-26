@@ -831,17 +831,15 @@ a.btn-secondary {
 /* line 21, ../scss/patterns/_helpers.scss */
 .iframe-embed {
   width: 100%;
-  height: 800px;
   position: relative;
   overflow: hidden;
-  background-color: #f6f6f6;
-  border: 1px dotted #dddddd;
   padding: 0.5em;
-  margin-bottom: 2.25em; }
-  /* line 31, ../scss/patterns/_helpers.scss */
+  padding-bottom: 256px; }
+  /* line 28, ../scss/patterns/_helpers.scss */
   .iframe-embed iframe {
     width: 100%;
     height: 100%;
+    position: absolute;
     top: 0;
     left: 0; }
 
